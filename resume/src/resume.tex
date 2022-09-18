@@ -1,0 +1,119 @@
+% SETTINGS ###########################################################################
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=0.7cm,right=9.5cm,marginparwidth=8.3cm,marginparsep=0.5cm,top=0.9cm,bottom=0.5cm}
+
+% Change the font if you want to, depending on whether
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+}
+
+% Change the colours if you want to
+\definecolor{Black}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\colorlet{heading}{Black}
+\colorlet{accent}{Black}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{SlateGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+
+% DOCUMENT ###########################################################################
+\begin{document}
+\name{Megan Sorenson}
+\tagline{Searching for: 8 Month Coop Fall 2023}
+\photo{1.5cm}{ubc_logo}
+\personalinfo{%
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{mailto:msorenso@student.ubc.ca}{msorenso@student.ubc.ca}
+  \github{https://github.com/MeganSorenson}{github.com/MeganSorenson}
+  \homepage{https://megansage01.wixsite.com/my-site/about-megan}{megansorenson.ca}\\[5pt]
+  % \mailaddress{Address, Street, 00000 County}
+  \location{Vancouver, BC\kern 1pc}
+  \phone{\href{tel:7802211904}{780 221 1904\kern 1em}}
+  % \twitter{@marissamayer}
+  \linkedin{https://www.linkedin.com/in/megsorenson/}{linkedin.com/in/megsorenson}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+
+% EXPERIENCE #########################################################################
+\cvsection[sidebar]{Experience}
+\cvevent{Muskoxen Data Project}{University of Calgary}{August 2022 -- Ongoing}{Calgary, AB}
+\begin{itemize}
+\item Responsible for data cleaning, manipulation, and to determine which variable has the highest contribution to determining hoof health to facilitate community data collection in Northern Canada.
+\item Collaborative project to describe the characteristics of a healthy muskoxen hoof to ultimately create a baseline for future analyses.
+\end{itemize}
+\divider\small
+
+\cvevent{Data Science Intern}{University of Calgary}{May -- September 2021}{Calgary, AB}
+\begin{itemize}
+\item Independent project in collaboration with the Canadian Animal Task Force (CATF) and Dogs Trust Worldwide.
+\item Analyzed the effectiveness of dog clinics over time using canine clinic data.
+\item Outlined changes for the organization's data colection methods to improve the quality of future assessments; feedback implemented in 2022 clinic data collection.
+\end{itemize}
+\divider\small
+
+\cvevent{Sustainability R\&D Co-op}{Gaia Protein}{January -- June 2021}{Calgary, AB}
+\begin{itemize}
+\item Provided the literature basis for improving the sustainability and efficiency of cricket farming practices within the company.
+\item Created a handbook used for new-hires at the company as of June 2021.
+\end{itemize} 
+\divider\small
+
+
+% PROJECTS ###########################################################################
+\cvsection{Projects}
+\cvevent{\href{https://3033d3ee-ede9-4cff-92e1-6ca4a74b43ca.filesusr.com/ugd/084bc4_b83be4550d6240a0b79469a69074d72d.pdf}{Canine BCS Approximator [Abstract]}}{}{May -- September 2021}{}
+\begin{itemize}
+  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
+  \item Developed a novel method for accurately approximating canine body condition score (BCS) using canine data and historical growth curves.
+  \item Created opportunities to assess the impact of dog clinics where BCS data was not collected from veterinarians and volunteers.
+  \item \underline{\textit{Utilized:}} R, Python, Statistics, Data Science
+\end{itemize}
+\divider\small
+
+\cvevent{\href{https://github.com/MeganSorenson/Zooplankton_Shipping_ArcGISPro_Model}{Optimal Shipping Routes in the Atlantic [GitHub]}}{}{September 2021 -- January 2022}{}
+\begin{itemize}
+  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
+  \item A GIS project that utilized historical datasets by creating optimal shipping routes that avoid 90 percent of zooplankton hotspots.
+  \item Contributed to the academic knowledge base by developping a cost-surface raster layer that was minimized for distance and plankton abundance.
+  \item \underline{\textit{Utilized:}} ArcGIS Pro, Spatial Statistics, Story Maps, Python
+\end{itemize}
+\divider\small
+
+\cvevent{\href{https://github.com/MeganSorenson/Arthropod_Data_Project}{Arthropod Data Project [GitHub]}}{}{September 2021 -- January 2022}{}
+\begin{itemize}
+  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
+  \item Determined whether there was a correlation between climate variables and insect abundance using two decades of presence/absence data.
+  \item Applied bootstrapping methods to find what combination of temporal climatic events would result in a boom/bust for an insect group.
+  \item \underline{\textit{Utilized:}} R, Data Science, Data Visualization
+\end{itemize}
+
+
+\clearpage
+\nocite{*}
+\end{document}
