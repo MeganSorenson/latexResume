@@ -7,7 +7,6 @@ $(TARGET):
 	pdflatex -jobname=$(TARGET) \
 	-halt-on-error \
 	resume.tex \
-	> /dev/null
 	@make clean
 
 .PHONY: live
