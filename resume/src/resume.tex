@@ -32,7 +32,7 @@
 % DOCUMENT ###########################################################################
 \begin{document}
 \name{Megan Sorenson}
-\tagline{Searching for Coop/Internship Roles}
+\tagline{}
 \photo{1.5cm}{ubc_logo}
 \personalinfo{%
   % You can add your own with \printinfo{symbol}{detail}
@@ -62,52 +62,57 @@
 
 % EXPERIENCE #########################################################################
 \cvsection[sidebar]{Experience}
-\cvevent{Software Developer Intern}{SAP}{January - August 2023}{Vancouver, BC}
+\cvevent{Software Developer Co-op}{SAP}{May - August 2023}{Vancouver, BC}
 \begin{itemize}
-\item Developed Python Flask applications to establish a universal standard for SAP technology reselling, increasing efficiency and accuracy for companies through metric calculation and processing.
-% \item Improving the performance of a supervised machine learning model that classifies customer email tickets by incorporating 200,000 more email tickets.
-\item Completed a KMeans cluster analysis on calculated metrics used to focus business priorities based on region, industry, and other company metrics.
-\item Created a unit test suite that increased code coverage by 40 percent.
-\item Created a MS Teams notification system that was integrated into different stages of the application to alert internal members about hidden bugs during metric calculation or data collection.
-\item \underline{\textit{Utilized:}} REST APIS, Python, Azure Machine Learning Tools, Machine Learning, SQL, NLP, Flask, Jenkins
+\item Incorporated a new data source into processing pipeline/microservice, including manifest configuration with updated authorizations and sql mapping.
+\item Added a Microsoft Teams notification service for a backend engine which eliminated a \textbf{30 minute} code validation with every deployment.
+\item Upgraded Linux Kernel and Python version (3.6 to 3.11) across codebase without impacting production.
+\item Wrote Python unit tests to increase code coverage from \textbf{53\% to 96\%} using unittest and mock frameworks.
+\item Independently debugged and fixed production issues brought to the development team from external and internal sources.
+\item Modularized codebase which reduced line duplication by \textbf{10\%} and improved overall code readability and testability.
+\item \underline{\textit{Utilized:}} Python, SQL, REST API, Flask, Jenkins, Honeycomb, SonarQube, GitHub, Agile Development
 \end{itemize}
-\divider\small
+\divider
+
+\cvevent{Machine Learning Developer Co-op}{SAP}{January - April 2023}{Vancouver, BC}
+\begin{itemize}
+\item Fully migrated a deprecated ML microservice onto a new platform (Azure Databricks and Data Lake) to continue service of product.
+\item Created a cluster analysis POC leading to the creation of an AI/ML innovation team to produce similar POCs for relevant business problems.
+\item Debugged and reformatted preprocessing pipeline which fixed previously uncaught model accuracy issues.
+\item Retrained NLP classification models in \textbf{4} different languages by adding \textbf{500,000} new labeled data points. 
+\item Created NLP classification models that improved accuracies by \textbf{10\%} to reallocate the efforts of \textbf{1 FTE}.
+\item Responsible for hiring and onboarding of replacement intern.
+\item \underline{\textit{Utilized:}} Python, SQL, scikit-learn, Azure ML Services, Machine Learning, NLP, Data Processing, Data Lake
+\end{itemize}
+\divider
 
 \cvevent{Data Science Intern}{University of Calgary, Canadian Animal Task Force}{May -- September 2021}{Calgary, AB}
 \begin{itemize}
-\item Independent project that utilized a decade's worth of raw data to determine whether veterinary data can be used to effectively assess impact of spay-neuter clinic charities in Alberta.
+\item Independent project resulting in a published academic paper that utilized a decade's worth of raw data to determine whether it could be used to effectively assess impact of spay-neuter clinic charities in Alberta.
 \item Identified changes for the organization's data collection methods to allow for future assessments; data collection feedback was implemented in over a dozen clinics in 2022.
 \item \underline{\textit{Utilized:}} R, Data Analysis, Data Cleaning, Data Communication, Research
 \end{itemize}
 
-% PROJECTS ###########################################################################
-\cvsection{Projects}
-\cvevent{\href{https://github.com/MeganSorenson/Beeno}{Parking Airbnb: NwHacks 2023 Project [GitHub]}}{}{January 2023}{}
-\begin{itemize}
-  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
-  \item Created a web application that allows users to post and book parking spaces and manage their stalls and bookings.
-  \item Lead the creation of the database and backend server using sqlite and Flask, and helped the frontend team integrate our API into their code.
-  \item \underline{\textit{Utilized:}} Python, Flask, JavaScript, CSS, HTML, full stack 
-\end{itemize}
-\divider\small
-
-\cvevent{\href{https://github.com/MeganSorenson/WorldOfWordle}{World Of Wordle Java Application [GitHub]}}{}{September 2022 - December 2022}{}
-\begin{itemize}
-  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
-  \item Created a wordle-inspired Java application with extended options to play simultaneously with one, two, or three boards.
-  \item Utilized Java Swing to create a GUI whereguesses are color populated based on their accuracy and included serialization of game state to allow time-interupted playing.
-  \item Created a unit testing suite with 100 percent code coverage.
-  \item \underline{\textit{Utilized:}} Java, JUnit, json Serialization, Event Logging, Software Construction
-\end{itemize}
-\divider\small
-
-\cvevent{\href{https://github.com/MeganSorenson/Zooplankton_Shipping_ArcGISPro_Model}{Optimal Shipping Routes in the Atlantic [GitHub]}}{}{September 2021 -- January 2022}{}
-\begin{itemize}
-  % Created a python library that acts as an API for a CLI interface. This is also importable to be used within python scripts.
-  \item Utilized historical datasets to create optimal shipping routes that avoid 90 percent of zooplankton hotspots using ArcGIS Pro software.
-  \item Developped a cost-surface raster layer that was minimized for distance and plankton abundance that contributed novel findings to the academic knowledge base.
-  \item \underline{\textit{Utilized:}} ArcGIS Pro, Spatial Statistics, Story Maps, Python, Research
-\end{itemize}
+\cvsection{Skills/Coursework}
+% Languages
+\cvtag{Python}
+\cvtag{Java}
+\cvtag{SQL}
+\cvtag{C++}
+\cvtag{R}
+\cvtag{HTML}
+\cvtag{CSS}
+\cvtag{JavaScript}
+\cvtag{Data Structures}
+\cvtag{Algorithms}
+\cvtag{REST APIs}
+\cvtag{Flask}
+\cvtag{pandas}
+\cvtag{Machine Learning}
+\cvtag{Data Visualization}
+\cvtag{Data Cleaning}
+\cvtag{Git/GitHub}
+\cvtag{Jenkins}
 
 
 \clearpage
